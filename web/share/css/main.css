@@ -252,3 +252,10 @@ ul.footer li a {
 .hidden {
 	display: none !important;
 }
+
+.enabled {
+  text-shadow: 0.5px 0 0 currentColor;
+  border: var(--border-intensive-2px);
+  color: var(--cs-control-intensive-fg);
+  background-color: var(--cs-thumb-default-bg);
+}

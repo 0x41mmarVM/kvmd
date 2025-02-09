@@ -1,0 +1,1 @@
+Files in this directory are to be copied into /usr/bin

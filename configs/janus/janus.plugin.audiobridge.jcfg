@@ -1,0 +1,13 @@
+general: {
+
+}
+
+room-1234: {
+    description = "KVM Room"
+    sampling_rate = 16000
+    rtp_forward_host = "127.0.0.1"
+    rtp_forward_port = 5004
+    rtp_forward_codec = pcma
+    rtp_forward_ptype = 8
+    rtp_forward_always_on = true
+}

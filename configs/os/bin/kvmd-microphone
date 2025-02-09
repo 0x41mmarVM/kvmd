@@ -1,0 +1,5 @@
+#!/bin/bash
+while [ 1 ]
+do
+    ffmpeg -protocol_whitelist "file,udp,rtp" -re -i /etc/janus/stream.sdp -acodec pcm_s16le -ar 48000 -f alsa hw:CARD=UAC2Gadget
+done

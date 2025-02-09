@@ -31,6 +31,7 @@ import {Hid} from "./hid.js";
 import {Atx} from "./atx.js";
 import {Msd} from "./msd.js";
 import {Streamer} from "./stream.js";
+import {Microphone} from "./microphone.js";
 import {Gpio} from "./gpio.js";
 import {Ocr} from "./ocr.js";
 
@@ -47,6 +48,7 @@ export function Session() {
 
 	var __streamer = new Streamer();
 	var __recorder = new Recorder();
+	var __microphone = new Microphone();
 	var __hid = new Hid(__streamer.getGeometry, __recorder);
 	var __atx = new Atx(__recorder);
 	var __msd = new Msd();

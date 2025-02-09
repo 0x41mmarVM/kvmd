@@ -1,0 +1,18 @@
+[Unit]
+Description=GStreamer RTP Audio to UAC2 Gadget
+After=network.target network-online.target nss-lookup.target kvmd.service kvmd-janus.service usb_gadget.service
+
+[Service]
+ExecStart=/usr/bin/kvmd-microphone
+Restart=on-failure
+RestartSec=10
+StartLimitInterval=300
+StartLimitBurst=3
+User=root
+
+
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=USB Microphone Gadget Configuration
+After=network.target kvmd-otg.service kvmd.service
+Before=kvmd-mic.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/usb_gadget_setup.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
